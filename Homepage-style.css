@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+
+
+body {
+  margin: 0;
+  max-width: 1200;
+ 
+}
+
+
+.two-column {
+  display: flex;
+  flex-flow: row no-wrap;
+  align-items: center;
+}
+
+#infoparent{
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  display: grid; 
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+   justify-content: center;
+  
+}
+
+.infochild{
+  grid-column-start: 2;
+  grid-row-start: 2;
+  height: 100%; 
+  width: 100%;
+}
+
+
+.h1 {
+  color: #b147f2;
+  font-family: "Joan";
+  font-style: normal;
+}
+
+.h2 {
+  color: #3c3c3c;
+  font-family: "Joan";
+  font-style: normal;
+}
+
+.h3 {
+  color: #3c3c3c;
+  font-family: "Joan";
+  font-style: normal;
+}
+#map-mask{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background: purple;
+  height: 100%; 
+  width: 50%;
+  
+}
+
+#map{
+    /*background: black;*/
+  display: grid;
+  height: 800px;
+  width: 100%;
+  align-items: center;
+
+  
+}
+
+a{
+  justify-content: center;
+}
+
+
+#map-mask svg{
+  z-index:100;
+  grid-column-start:1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+
+
+
+
+
+#footer {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  font-family: "Joan";
+  font-style: normal;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  margin: 2px;
+  align-items: center;
+}
+
+
+
+@media (max-width: 480px) {
+  .two-column{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+    
+  }
+}
+
+@media (max-width: 480px) {
+  #map{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+  }
+}
+
+
+@media (max-width: 480px) {
+  #infoparent{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    
+    
+  }
+}
+
+
+@media (min-width: 30em) and (max-width: 60em) {
+  body {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
